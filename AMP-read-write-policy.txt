@@ -1,0 +1,50 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "aps:ListRules",
+                "aps:UpdateWorkspaceAlias",
+                "aps:CreateAlertManagerAlerts",
+                "aps:ListTagsForResource",
+                "aps:DeleteRuleGroupsNamespace",
+                "aps:DescribeRuleGroupsNamespace",
+                "aps:ListAlerts",
+                "aps:PutRuleGroupsNamespace",
+                "aps:PutAlertManagerSilences",
+                "aps:UpdateLoggingConfiguration",
+                "aps:CreateAlertManagerDefinition",
+                "aps:DeleteLoggingConfiguration",
+                "aps:ListAlertManagerAlerts",
+                "aps:DeleteAlertManagerDefinition",
+                "aps:GetLabels",
+                "aps:CreateRuleGroupsNamespace",
+                "aps:GetAlertManagerStatus",
+                "aps:CreateLoggingConfiguration",
+                "aps:GetAlertManagerSilence",
+                "aps:ListAlertManagerAlertGroups",
+                "aps:RemoteWrite",
+                "aps:DeleteWorkspace",
+                "aps:DescribeAlertManagerDefinition",
+                "aps:QueryMetrics",
+                "aps:GetMetricMetadata",
+                "aps:DescribeWorkspace",
+                "aps:DeleteAlertManagerSilence",
+                "aps:DescribeLoggingConfiguration",
+                "aps:PutAlertManagerDefinition",
+                "aps:ListAlertManagerSilences",
+                "aps:GetSeries",
+                "aps:ListAlertManagerReceivers"
+            ],
+            "Resource": "arn:aws:aps:*:453881978278:rulegroupsnamespace/*/*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "aps:CreateWorkspace",
+            "Resource": "*"
+        }
+    ]
+}
