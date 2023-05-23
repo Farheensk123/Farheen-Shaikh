@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "batch:DeregisterJobDefinition",
+                "batch:CreateJobQueue",
+                "batch:SubmitJob",
+                "batch:CreateSchedulingPolicy",
+                "batch:UpdateSchedulingPolicy",
+                "batch:RegisterJobDefinition",
+                "batch:DeleteSchedulingPolicy",
+                "batch:UpdateJobQueue"
+            ],
+            "Resource": [
+                "arn:aws:batch:*:453881978278:job-definition/*:*",
+                "arn:aws:batch:*:453881978278:scheduling-policy/*"
+            ]
+        }
+    ]
+}
