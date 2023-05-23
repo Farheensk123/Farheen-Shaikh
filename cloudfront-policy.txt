@@ -1,0 +1,48 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "cloudfront:GetCachePolicyConfig",
+                "cloudfront:GetOriginAccessControlConfig",
+                "cloudfront:GetResponseHeadersPolicy",
+                "cloudfront:TagResource",
+                "cloudfront:GetInvalidation",
+                "cloudfront:GetDistribution",
+                "cloudfront:GetResponseHeadersPolicyConfig",
+                "cloudfront:ListTagsForResource",
+                "cloudfront:GetOriginAccessControl",
+                "cloudfront:GetFieldLevelEncryption",
+                "cloudfront:GetCachePolicy",
+                "cloudfront:GetDistributionConfig",
+                "cloudfront:GetFieldLevelEncryptionProfileConfig",
+                "cloudfront:GetFieldLevelEncryptionConfig",
+                "cloudfront:UntagResource",
+                "cloudfront:GetFieldLevelEncryptionProfile"
+            ],
+            "Resource": [
+                "arn:aws:cloudfront::453881978278:response-headers-policy/*",
+                "arn:aws:cloudfront::453881978278:distribution/*",
+                "arn:aws:cloudfront::453881978278:field-level-encryption-profile/*",
+                "arn:aws:cloudfront::453881978278:origin-access-control/*",
+                "arn:aws:cloudfront::453881978278:cache-policy/*",
+                "arn:aws:cloudfront::453881978278:field-level-encryption-config/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "cloudfront:GetKeyGroup",
+                "cloudfront:GetPublicKeyConfig",
+                "cloudfront:GetPublicKey",
+                "cloudfront:GetMonitoringSubscription",
+                "cloudfront:GetKeyGroupConfig",
+                "cloudfront:GetSavingsPlan"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
