@@ -1,0 +1,59 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:CreateFunction",
+                "lambda:GetLayerVersion",
+                "lambda:InvokeAsync",
+                "lambda:GetFunctionConfiguration",
+                "lambda:GetLayerVersionPolicy",
+                "lambda:PutFunctionConcurrency",
+                "lambda:DeleteCodeSigningConfig",
+                "lambda:ListTags",
+                "lambda:GetRuntimeManagementConfig",
+                "lambda:PutFunctionEventInvokeConfig",
+                "lambda:DeleteFunctionEventInvokeConfig",
+                "lambda:DeleteFunction",
+                "lambda:GetAlias",
+                "lambda:PutFunctionCodeSigningConfig",
+                "lambda:CreateFunctionUrlConfig",
+                "lambda:UpdateFunctionEventInvokeConfig",
+                "lambda:DeleteFunctionCodeSigningConfig",
+                "lambda:InvokeFunctionUrl",
+                "lambda:GetFunction",
+                "lambda:UpdateFunctionConfiguration",
+                "lambda:GetFunctionUrlConfig",
+                "lambda:GetFunctionCodeSigningConfig",
+                "lambda:UpdateAlias",
+                "lambda:UpdateFunctionCode",
+                "lambda:PutRuntimeManagementConfig",
+                "lambda:GetFunctionConcurrency",
+                "lambda:GetFunctionEventInvokeConfig",
+                "lambda:DeleteAlias",
+                "lambda:PublishVersion",
+                "lambda:GetCodeSigningConfig",
+                "lambda:DeleteFunctionUrlConfig",
+                "lambda:GetPolicy",
+                "lambda:CreateAlias"
+            ],
+            "Resource": [
+                "arn:aws:lambda:*:453881978278:layer:*:*",
+                "arn:aws:lambda:*:453881978278:function:*",
+                "arn:aws:lambda:*:453881978278:code-signing-config:*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:GetAccountSettings",
+                "lambda:CreateEventSourceMapping",
+                "lambda:CreateCodeSigningConfig"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
