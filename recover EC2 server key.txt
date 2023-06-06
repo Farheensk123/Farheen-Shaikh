@@ -9,7 +9,7 @@ following are steps to recover EC2 server key:-
    click-advance ssh setting add instance-1 .pem key -ok 
 7. type lsblk ,hvdf partition is show theire .
 8. make directory name /var/Farheen
-9. mount that directory in  xvdf1 by using cmd ( mount -o /dev/xvdf1 /var/charan )
+9. mount that directory in  xvdf1 by using cmd ( mount -o /dev/xvdf1 /var/farheen)
 10. Check the partation by using lsblk cmd and type ( cat /home/ec2-user/.ssh/authorized_keys >> /var/rupesh/home/ec2-u      ser/.ssh/authorized_key
 11. Umount that mount directory ( umount /var/farheen/ ) and check by using lsblk cmd 
 12. Umount the mount directory ( umount /var/farheen/ ) and check by using lsblk cmd 
