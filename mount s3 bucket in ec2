@@ -1,0 +1,33 @@
+following is the process to mount s3 bucket into ec2 using ubantu:-
+
+first we need to create 1 instance in that select ubuntu as OS image < Keep everything as default < launch instance.
+instance should be in running mode.
+then,
+ install awscli and s3fs utlity for that 
+open ubuntu pannel, write this codde
+
+sudo apt-get update -y
+sudo apt-get install awscli -y
+sudo apt-get install s3fs -y
+
+After that Create an IAM user for s3fs
+Give a unique name and provide programmatic access 
+attach a s3 full permission < create policy.
+Once the policy is created, go back to the IAM tab and hit refresh so that newly created policy is included in the list.
+
+go to ubuntu, write down below code,
+mkdir /home/ubuntu/bucket; 
+cd $HOME/bucket ;
+touch test1.txt test2.txt test3.txt
+
+Next step is to create an S3 bucket.
+Go to S3 service and create a new bucket. 
+Once the bucket is created, go to the ssh session and configure our AWS using below command.
+aws configure
+aws s3 sync path_on_filesystem s3://bucketname
+$AWS_ACCESS_KEY_ID:$AWS_SECRET_KEY_ID
+echo "AKIAQSCIQUH6XXYQMGDA:T5qM7rZmSaU3p/Y0xmuZyWv1/KUnT0Oc58sdCJ3t" > ${HOME}/.passwd-s3fs; -------> (access key and secret key)
+chmod 600 ${HOME}/.passwd-s3fs
+Once it is mounted successfully, you can verify by running the command.
+mount|grep s3fs
+now you can check s3 bucket and file...
