@@ -1,0 +1,8 @@
+s3 ---> create bucket ---> name ---> bucket_static ----> block public access.
+object ownership ---> ACL enable 
+---> create bucket.
+click on bucket ---> upload ---> add file ---> add folder ---> upload.
+properties ---> static website hosting ---> edit ---> enable ----> 
+index document ---> save.
+static website ---> bucket website endpoint ---> url --->server access login ---> target bucket ---> give bucket name ---> save.
+ACL ---> edit --> list and read permission ---> action ---> make public using ACL --->PASTE IN BROWSER.

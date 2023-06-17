@@ -1,0 +1,3 @@
+go to IAM--> user ---> Add user ---> user name ---> give check marks to "Provide user access to the AWS Management Console"
+---> select "I want to create an IAM user" ---> select custom password ---> uncheck "Users must create a new password at next sign-in"
+---> next ---> attach policy directly ---> give s3 full permission ---> next ---> create user ---> download CSV

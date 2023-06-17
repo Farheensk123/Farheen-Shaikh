@@ -1,0 +1,41 @@
+---launch configuration 
+
+go to ec2--launch confi(name = lc1) 
+--AMI =paste AMI id copy from launch instance
+--instance t2 micro--add confi (optional)
+--userdata
+--key pair choose existing --
+
+Ec2--
+create autoscaling group
+--name=as-grp
+-launch conf =lc1 
+---vpc=default
+--avaibility zone =3
+---group size --desired 3
+              --mini-2
+              --maxi-5--create
+
+automatic scaling group
+--dynamic scaling policy
+---scaling policy name=increse grp
+--for alram go to cloudwatch-in alarm -select metric---EC2--autoscaling --grp-as-grp-condition- attach to dynamic policy--add 2
+
+create dynamic policy  (increase and decrease)
+policy type=simple scaling--scaling policy name =decrease-grp----for add alarm goto cloudwatch--create aalarm -select matrics-ec2-grp---as-first ---condition-static-lower/equals than 20--add autoscaling--decrease grp-add name & description -decrease-group-name 
+
+
+
+asg
+desired capacity --3
+mini capacity ---2
+maxi capacity --5
+asg--automatic scaling --dynamic scaling policy--simple policy --decrease  group-- then go to cloud watch service and create alarm
+
+
+to increase load on server 
+launch server 
+install epel -y
+download stress command 
+fire stress --help  (copy command mention desired parameter)
+increase load by 90

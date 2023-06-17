@@ -1,0 +1,16 @@
+s3 ---> bucket_ac_1 --->management ---> create replication rule ---->name ---> acc_rule1.
+source bucket --> apply to all --->
+destinnation -->specify a bucket in another account.
+--->paste account id of second account --->paste bucket name of second account.
+NOTE: WE HAVE TO USE 2 DIFFERENT ACCOUNT IN THAT 2 A/C WE HAVE TO CREATE BUCKET IN DIFFRENT REGION.(FIRST STEP)
+ ----------CONTINUE-------------
+IAM Role ---> create new role ---> save ----> yes
+upload ---> object ---> in acc_rule1(bucket1)--a/c 2
+full access--> upload.
+A/C 2 ----> bucket ---> permissions ---> ACL ---> edit.
+Bucket owner ---> bucket ACL --> read write.
+everyone ---> public access.
+save.
+account 1:----
+bucket ---> management ---> repliction section ----> destination ---> object ---> copy object url ---> paste on browser.
+SUCCESFULLY REPLICATED.
