@@ -1,0 +1,8 @@
+s3 ---> create bucket ---> name (taskbucket) ---> create bucket with default value ---> go to IAM ---> plicies ---> create policy ---> s3
+---> access level (read and write) ---> reaourses ---> add ARN ---> give already created bucket name ---> next ---> give name (read_s3_write) ---> create policy
+--->
+create another policy with same process but now give only read permission
+----->user --->click add user ---> task_user ---> next ---> select ---> "custom managed" ---> select ----> read_s3_write ----> next 
+---> create user.
+FOLLOW SAME PROCEDURE FOR USER 2
+NOW U SUCCESSFULLY CREATED 2 USER WITH APPROPRIATE PERMISSION.
